@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function App() {
+const Product = () => {
     return (
         <div>
-            E-Commerce
+            
         </div>
     )
 }
+
+export default Product
