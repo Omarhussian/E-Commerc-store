@@ -7,13 +7,19 @@ export default function App() {
     const [products , setProducts] = useState([]);
 
     const fetchProducts = async () => {
-        const { data } = await commerce.products.list();
-        setProducts(data);
+        try {
+            const {data} = await commerce.products.list();
+            // console.log(data);
+            setProducts(data);
+        }
+      catch(err){
+            console.log(err.stack)
+      }
  }
-    useEffect (()=>{
-        fetchProducts();
-    }, []);
+   useEffect (()=> {
+    fetchProducts();
 
+    }, [] )
 
     console.log(products);
 
