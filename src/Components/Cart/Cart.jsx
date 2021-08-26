@@ -10,8 +10,8 @@ const Cart = ({ cart , handleUpdateCartQty , handleRemoveFromCart , handleEmptyC
 
   const EmptyCart = () => (
     <Typography variant="subtitle1">
-      you have no items on your shopping Cart 
-      <Link to='/' className={classes.link}>start adding some!</Link>!
+      you have no items on your shopping Cart, 
+         <Link to='/' className={classes.link}>start adding some!</Link>!
     </Typography>
   );
 
@@ -34,7 +34,7 @@ const Cart = ({ cart , handleUpdateCartQty , handleRemoveFromCart , handleEmptyC
                  <Button className={classes.emptyButton} size="large" type="button" variant="contained" color="secondary" onClick={handleEmptyCart}>
                    Empty Cart
                  </Button>
-                 <Button className={classes.checkoutButton} size="large" type="button" variant="contained" color="primary">
+                 <Button className={classes.checkoutButton} size="large" type="button" variant="contained" color="primary" component={Link} to="/checkout">
                    Check out
                  </Button>
                </div>
