@@ -14,15 +14,22 @@ export default makeStyles((theme) => ({
       width: 600,
       marginLeft: 'auto',
       marginRight: 'auto',
+      backGround: '1f1f1f',
+      
     },
   },
   paper: {
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(3),
     padding: theme.spacing(2),
+    backGround:'white',
+    borderRadius:'5px',
+    borderShadow:'grey',
+
     [theme.breakpoints.down('xs')]: {
       width: '100%',
       marginTop: 60,
+
     },
     [theme.breakpoints.up(600 + theme.spacing(3) * 2)]: {
       marginTop: theme.spacing(6),
