@@ -3,6 +3,6 @@
 ### this E-commerce App was built up with reactjs,CommerceJs and Material-ui 
 
 ## Steps to get it running:
-1-Fork this `repo` <\br>
-2-npm install <\br>
+1-Fork this `repo` <br />
+2-`npm install` <br/>
 3- to run it local `npm start`
